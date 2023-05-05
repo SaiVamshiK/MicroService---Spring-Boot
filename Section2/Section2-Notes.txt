@@ -11,3 +11,10 @@ Here the student class is dependent on the subject class.
 So whenever we use the student class we need to create objects for the subject class as well.
 This is tedious.
 So we use IOC (inversion of control) and give the control to Spring framework to create the objects.
+Now all the dependencies are handled by the Spring framework itself.
+All the classes in the Spring framework is defined as a bean.
+When we run the spring app, all the beans are created and stored in the Spring container.
+If any bean is dependent on any other bean, spring framework takes care of injecting it based on the scope defined.
+
+Spring Initializer:
+Go to the spring initializer, add the spring web dependency to the project and download it.
