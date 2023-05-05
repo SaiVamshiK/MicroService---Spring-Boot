@@ -20,6 +20,10 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+<!--			We see spring-boot-starter-web is added in our pom.
+				This is basically inheriting all the dependencies in spring-boot-starter-web.pom file.
+				This way we are importing lesser number of dependencies in our code.
+-->
 		</dependency>
 
 		<dependency>
