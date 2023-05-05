@@ -1,0 +1,13 @@
+Spring Boot:
+To minimize the configurations we used to have in the spring framework, Spring boot came into picture. Spring boot is an abstraction of the Spring framework.
+All basic configurations are already added in Spring boot.
+
+Dependency Injection: 
+This is implemented by Spring boot framework. 
+Example: 
+Say there is a Student class that has "name", "email" and Subject class.
+The Subject is another class that has "subject name" and "teacher name".
+Here the student class is dependent on the subject class.
+So whenever we use the student class we need to create objects for the subject class as well.
+This is tedious.
+So we use IOC (inversion of control) and give the control to Spring framework to create the objects.
