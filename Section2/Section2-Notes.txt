@@ -20,3 +20,14 @@ Spring Initializer:
 Go to the spring initializer, add the spring web dependency to the project and download it.
 Run the application, we see that the application is running on the default tomcat server we get.
 We get the whitelabel error page when we go to the localhost:8080/ since we do not have any mapping yet.
+
+More about Spring boot:
+IOC container will have all the beans we have defined. When we hit the run method the IOC container will be used to create a context.
+Either it can be a web context or application context.
+And the embedded server is used to attach the context to it, in order to start the application.
+
+Embedded Servers:
+General Deployment : Application -> Create JAR/WAR -> Deploy to Server.
+With Spring boot : Application + Embedded Server -> Deploy it.
+The tomcat is a default we get with spring boot.
+
