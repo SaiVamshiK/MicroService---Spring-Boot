@@ -24,6 +24,12 @@
 				This is basically inheriting all the dependencies in spring-boot-starter-web.pom file.
 				This way we are importing lesser number of dependencies in our code.
 -->
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-tomcat</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<dependency>

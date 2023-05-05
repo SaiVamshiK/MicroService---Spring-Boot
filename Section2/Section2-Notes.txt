@@ -31,3 +31,4 @@ General Deployment : Application -> Create JAR/WAR -> Deploy to Server.
 With Spring boot : Application + Embedded Server -> Deploy it.
 The tomcat is a default we get with spring boot.
 
+Now we have removed the tomcat dependency and after running we see our application is not running in any server.
