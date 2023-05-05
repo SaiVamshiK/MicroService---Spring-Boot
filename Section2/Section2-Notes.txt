@@ -18,3 +18,5 @@ If any bean is dependent on any other bean, spring framework takes care of injec
 
 Spring Initializer:
 Go to the spring initializer, add the spring web dependency to the project and download it.
+Run the application, we see that the application is running on the default tomcat server we get.
+We get the whitelabel error page when we go to the localhost:8080/ since we do not have any mapping yet.
