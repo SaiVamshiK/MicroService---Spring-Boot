@@ -32,9 +32,10 @@ public class HomeController {
     }
 
     // @PathVariable will change the response based on the path of the URL
-    @GetMapping("/{id}")
-    public String pathVariable(@PathVariable("id") String id){
-        return id;
+    @GetMapping("/{id}/{name}")
+    public String pathVariable(@PathVariable("id") String id,
+                                @PathVariable("name") String name){
+        return id +" "+ name;
     }
 
 }
