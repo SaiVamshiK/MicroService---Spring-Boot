@@ -19,5 +19,21 @@ public class EmployeeController {
         employeeService.save(employee);
         return employee;
     }
+    // Now hitting this URL : http://localhost:8081/employees/ with the request body as follows:
+    //    {
+    //        "employeeID": "1",
+    //            "firstName" : "sai vamshi",
+    //            "lastName" : "kavali",
+    //            "emailID" : "sai@gmail.com",
+    //            "department" : "IT"
+    //    }
+    // and method as POST we get in response the same:
+    //    {
+    //        "employeeID": "1",
+    //            "firstName" : "sai vamshi",
+    //            "lastName" : "kavali",
+    //            "emailID" : "sai@gmail.com",
+    //            "department" : "IT"
+    //    }
 
 }
