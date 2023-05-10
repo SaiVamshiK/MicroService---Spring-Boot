@@ -1,5 +1,6 @@
 package com.section2.springbootsection2.servicelayer.impl;
 
+import com.section2.springbootsection2.models.Employee;
 import com.section2.springbootsection2.servicelayer.EmployeeService;
 import org.springframework.stereotype.Service;
 
@@ -7,5 +8,9 @@ import org.springframework.stereotype.Service;
 // It is same as @Component
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
+
+    public Employee save(Employee employee){
+        return employee;
+    }
 
 }
