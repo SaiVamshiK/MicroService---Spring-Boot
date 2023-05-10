@@ -43,8 +43,10 @@ public class HomeController {
     // After specifying required as false, we hit the URL : http://localhost:8081/requestParam?name=Vamshi, now we get the response as Vamshi null.
     @GetMapping("/requestParam")
     public String requestParams(@RequestParam("name") String name,
-                                @RequestParam(value = "email",required = false) String emailID){
+                                @RequestParam(value = "email",required = false,defaultValue = "") String emailID){
         return name + " " + emailID;
     }
+    // After adding the default values, we hit the URL : http://localhost:8081/requestParam?name=Vamshi, now we get the response as Vamshi
+    // The value for email is ""
 
 }
