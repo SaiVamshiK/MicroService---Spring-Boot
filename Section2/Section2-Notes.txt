@@ -32,3 +32,23 @@ With Spring boot : Application + Embedded Server -> Deploy it.
 The tomcat is a default we get with spring boot.
 
 Now we have removed the tomcat dependency and after running we see our application is not running in any server.
+
+
+Web Service:
+Any service we can access from the web.
+There are 2 types of web services : REST and SOAP.
+For eg: Twitter is not a web service, but there might be a web service which we can use in order to tweet.
+
+How web services work?
+App1  ---Web--- App2
+How do they interact? 
+1. App1 sends a request over a URL to App2.
+2. App2 does processing of the request and sends the response back.
+This happens over the HTTP protocol.
+For each web service we need to define the request data : JSON,XML etc.
+			   we need to define the response data : JSON,XML etc.
+			   Response data
+		         URL (e.g: /user/1).
+The communications happens using th HTTP methods: GET, PUT, POST and DELETE.
+
+REST (Representational State transfer):
