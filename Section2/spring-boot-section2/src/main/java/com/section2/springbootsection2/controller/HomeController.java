@@ -40,9 +40,10 @@ public class HomeController {
 
     // http://localhost:8081/requestParam?name=Vamshi , hitting this URL would return Vamshi as response in string form
     // http://localhost:8081/requestParam?name=Vamshi&email=sai@gmail.com, hitting this URL would return Vamshi sai@gmail.com as response in string form
+    // After specifying required as false, we hit the URL : http://localhost:8081/requestParam?name=Vamshi, now we get the response as Vamshi null.
     @GetMapping("/requestParam")
     public String requestParams(@RequestParam("name") String name,
-                                @RequestParam("email") String emailID){
+                                @RequestParam(value = "email",required = false) String emailID){
         return name + " " + emailID;
     }
 
