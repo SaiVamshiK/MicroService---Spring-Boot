@@ -3,6 +3,7 @@ package com.section2.springbootsection2.controller;
 import com.section2.springbootsection2.models.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -23,7 +24,7 @@ public class HomeController {
         return "Hello World";
     }
 
-    @RequestMapping("/user")
+    @RequestMapping(value = "/user",method = RequestMethod.GET)
     public User getUser(){
         User user = new User();
         user.setId("1");
