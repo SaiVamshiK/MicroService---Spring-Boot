@@ -38,4 +38,10 @@ public class HomeController {
         return id +" "+ name;
     }
 
+    // http://localhost:8081/requestParam?name=Vamshi , hitting this URL would return Vamshi as response in string form
+    @GetMapping("/requestParam")
+    public String requestParams(@RequestParam("name") String name){
+        return name;
+    }
+
 }
