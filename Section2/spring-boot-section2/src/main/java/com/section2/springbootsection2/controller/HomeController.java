@@ -1,5 +1,6 @@
 package com.section2.springbootsection2.controller;
 
+import com.section2.springbootsection2.models.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -20,6 +21,15 @@ public class HomeController {
     @RequestMapping("/")
     public String home() {
         return "Hello World";
+    }
+
+    @RequestMapping("/user")
+    public User getUser(){
+        User user = new User();
+        user.setId("1");
+        user.setName("saivamshi");
+        user.setEmailID("saivamshi@gmail.com");
+        return user;
     }
 
 }
